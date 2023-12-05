@@ -91,18 +91,42 @@ div.button {
 
 /* information */
 
-.emanuel img {
-    width: 60%;
+#information {
+    display: flex;
+}
+
+div.main-block, div.side-information {
+    display: inline-block;
+}
+
+div.main-block {
+    width: 56%;
+}
+
+div.side-information {
+    width: 44%;
+    padding-top: 1.5rem;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+/* emanuel */
+
+.main-block img {
+    width: 100%;
     padding: 2rem 1.5rem;
 }
 
-.emanuel-text {
-    width: 60%;
-    padding: 0 1.5rem 2rem;
+.main-block-text {
+    padding: 0 1.5rem 1rem;
 }
 
-.emanuel-text h2, .emanuel-text p {
-    padding-bottom: 1.5rem;
+.main-block-text h2, .main-block-text h3, .main-block-text p {
+    padding-bottom: 1.2rem;
+}
+
+.main-block-text h2 {
+    font-size: 1.6rem;
 }
 
 .quote {
@@ -110,12 +134,122 @@ div.button {
     font-weight: 100;
 }
 
-div.orientation {
+/* side-information */
+
+div.side-block {
     display: flex;
     justify-content: left;
     align-items: center;
 }
 
-.orientation img, .orientation h3, .orientation p, .orientation a {
+div.side-block-text {
     display: inline-block;
+    
+    padding-left: 0.2rem;
+}
+
+.side-block-text h4, .side-block-text p {
+    padding-bottom: 0.4rem;
+}
+
+.side-block-text p, .side-block-text a {
+    font-size: 0.8rem;
+}
+
+.side-block-text a {
+    text-decoration: none;
+    color: rgb(0, 123, 255)
+}
+
+.side-block img {
+    width: 35%;
+    padding: 0.8rem;
+}
+
+.side-block:hover {
+    background-color: lightgray;
+}
+
+/* Start learning */
+
+#start-learning {
+    background-color: lightgray;
+    padding-bottom: 2rem;
+}
+
+#start-learning h2 {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+div.learning-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0 72px;
+    width: 100%;
+}
+
+div.learning-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0rem 0.8rem 1rem;
+    background-color: white;
+}
+
+.learning-item img {
+    width: 100%;
+}
+
+div.learning-item-text {
+    padding: 1rem;
+}
+
+.learning-item-text h3, .learning-item-text p {
+    padding-bottom: 0.5rem;
+}
+
+.learning-item-text p {
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+/* Thesis */
+
+.thesis-container {
+    display: flex;
+}
+
+#thesis h2 {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.main-block video {
+    width: 100%;
+    padding: 2rem 1.5rem;
+}
+
+.thesis.side-information {
+    padding-top: 2rem;
+    border: none;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem 2rem;
+    border-top: 1px solid lightgray;
+}
+
+footer p, footer ul, footer li{
+    display: inline-block;
+}
+
+footer li {
+    padding-left: 1rem;
 }
