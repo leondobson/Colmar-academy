@@ -88,3 +88,34 @@ div.button {
     text-align: center;
     padding: 0.5rem 0;
 }
+
+/* information */
+
+.emanuel img {
+    width: 60%;
+    padding: 2rem 1.5rem;
+}
+
+.emanuel-text {
+    width: 60%;
+    padding: 0 1.5rem 2rem;
+}
+
+.emanuel-text h2, .emanuel-text p {
+    padding-bottom: 1.5rem;
+}
+
+.quote {
+    font-size: 0.75rem;
+    font-weight: 100;
+}
+
+div.orientation {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.orientation img, .orientation h3, .orientation p, .orientation a {
+    display: inline-block;
+}
