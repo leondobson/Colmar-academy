@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+p, a, li, h1, h2, h3 {
+    color: rgba(65, 65, 65, 1);
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding: 0 1.5rem;
+}
+
+div.logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.logo p {
+    font-weight: 200;
+}
+
+header img, header p, nav ul, nav li {
+    display: inline-block;
+}
+
+nav li {
+    padding: 1.4rem 0 1.4rem 1rem;
+    
+}
+
+nav a {
+    text-decoration: none;
+}
