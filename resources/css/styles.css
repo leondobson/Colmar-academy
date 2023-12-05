@@ -13,6 +13,10 @@ p, a, li, h1, h2, h3 {
     color: rgba(65, 65, 65, 1);
 }
 
+h1 {
+    font-size: 2.25rem;
+}
+
 /* HEADER */
 
 header {
@@ -37,13 +41,50 @@ header img, header p, nav ul, nav li {
     display: inline-block;
 }
 
-nav li {
-    padding: 1.4rem 0 1.4rem 1rem;
-    
-}
-
 nav a {
     text-decoration: none;
     display: block;
     padding: 1.4rem 0 1.4rem 1rem;
+}
+
+/* MAIN */
+
+/* learn */
+
+.learn {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgba(200, 200, 200, 1);
+}
+
+.learn img {
+    display: inline-block;
+    width: 60%;
+    padding: 2rem 1.5rem;
+}
+
+.text {
+    width: 35%;
+    float: right;
+}
+
+.text h1, .text p {
+    padding-bottom: 2rem;
+}
+
+.text p {
+    font-weight: 600;
+}
+
+div.button {
+    background-color: rgba(65, 65, 65, 1);
+}
+
+.button a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem 0;
 }
