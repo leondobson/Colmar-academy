@@ -19,32 +19,53 @@ h1 {
 
 /* HEADER */
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 4rem;
-    padding: 0 1.5rem;
+@media only screen and (max-width : 720px){
+    header#desktop {
+        display: none;
+    }
+
+    header#mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4rem;
+        padding: 0 1.5rem;
+    }
+
 }
 
-div.logo {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.logo p {
-    font-weight: 200;
-}
-
-header img, header p, nav ul, nav li {
-    display: inline-block;
-}
-
-nav a {
-    text-decoration: none;
-    display: block;
-    padding: 1.4rem 0 1.4rem 1rem;
+@media only screen and (min-width : 721px) {
+    header#mobile {
+        display: none;
+    }
+    
+    header#desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4rem;
+        padding: 0 1.5rem;
+    }
+    
+    div.logo {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    
+    .logo p {
+        font-weight: 200;
+    }
+    
+    header#desktop img, header#desktop p, nav ul, nav li {
+        display: inline-block;
+    }
+    
+    nav a {
+        text-decoration: none;
+        display: block;
+        padding: 1.4rem 0 1.4rem 1rem;
+    }
 }
 
 /* MAIN */
@@ -55,6 +76,7 @@ nav a {
     display: flex;
     justify-content: left;
     align-items: center;
+    flex-wrap: wrap;
     background-color: rgba(200, 200, 200, 1);
 }
 
@@ -87,6 +109,30 @@ div.button {
     text-decoration: none;
     text-align: center;
     padding: 0.5rem 0;
+}
+
+@media only screen and (max-width : 720px) {
+    .learn img, .learn div{
+        display: block;
+
+    }
+    
+    .learn img {
+        display: block;
+        width: 100%;
+        padding: 0;
+        
+    }
+
+    .text {
+        width: 100%;
+        display: block;
+        padding: 2rem 1rem
+    }
+
+    .text p {
+        padding-bottom: 1.5rem;
+    }
 }
 
 /* information */
@@ -194,7 +240,7 @@ div.learning-container {
 div.learning-item {
     display: inline-block;
     width: 30%;
-    margin: 0rem 0.8rem 1rem;
+    margin: 0rem 0.6rem 1rem;
     background-color: white;
 }
 
